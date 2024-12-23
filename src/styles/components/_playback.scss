@@ -1,0 +1,107 @@
+#playback__area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $default-bg;
+    font-family: $font-default;
+    padding : $m-size;
+
+    h3 {
+        background-color: $blue;
+        color: $off-white;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 3px 3px 5px $dark-blue;
+    }
+    .playback__header {
+        font-size: $m-size;
+        font-weight: 600;
+    }
+    .playback__hover_channel {
+        font-size: $m-size;
+        font-weight: 600;
+        margin: 15px 10%;
+        height: 48px;
+        padding: 10px;
+        background-color: #484fd9;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px #010f50;
+    }
+    .playback__channel {
+        flex: 0 0 20%;
+        height: 500px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        align-items: center;
+        padding : $s-size;
+
+        .pl_button {
+            width: 180px;
+            height: 100px;
+            margin: 3px $s-size;
+            background: #8e8e8e;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px #5e5e5e;
+        }
+        .pl_button:hover {
+            background: #011b9f;
+            color: $off-white;
+            box-shadow: 5px 5px 8px #110048;
+        }
+        .pl_button:active {
+            background: #dad007;
+            box-shadow: 3px 3px 3px #6a6c03;
+        }
+        .pl_button_pressed {
+            width: 180px;
+            height: 100px;
+            margin: 3px $s-size;
+            background: #c6c6c6;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px #3d3d3d;
+        }
+    }
+    .playback__video {
+        flex: 0 0 50%;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .playback__video__list {
+        flex: 0 0 30%;
+        height: 500px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        font-size: $m-size;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 15px;
+        
+        .video__title {
+            font-size: $s-size;
+            font-weight: 600;
+            background-color: #bcd308;
+            border-radius: 15px;
+            box-shadow: 3px 3px 5px #6a6c03;
+            padding: 0 5%;
+            
+        }
+        .video__thumb {
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
+}

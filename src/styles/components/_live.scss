@@ -1,0 +1,90 @@
+#live_area {
+    .live__content {
+        background: $default-bg;
+        font-family: $font-default;
+        margin-top: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .live__control {
+        position: absolute;
+        top: 40%;
+        left: 42%;
+        display: flex;
+        width: 60%;
+        border-radius: 15px;
+        margin: $s-size 0;
+        opacity: 0.0;
+        &:hover {
+            opacity: 0.9;
+        }
+        .video_button {
+            font-family: $font-default;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            background: $off-white;
+            color: #a7a7a7;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px #646464;
+            width: 20%;
+            margin: $s-size $s-size;
+            &:hover {
+                background: #505050;
+                opacity: 1;
+            }
+            &:active {
+            background: #1A5D1A;
+            box-shadow: 0 5px 10px #666;
+            transform: translateY(4px);
+            }
+            img {
+                margin-top: 10%;
+                width: 80%;
+            }
+        }
+    }
+    .live__control_pause {
+        position: absolute;
+        top: 40%;
+        left: 42%;
+        display: flex;
+        width: 60%;
+        border-radius: 15px;
+        margin: $s-size 0;
+        opacity: 0.9;
+        .video_button {
+            font-family: $font-default;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #a7a7a7;
+            background: $off-white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px #646464;
+            width: 20%;
+            margin: $s-size $s-size;
+            &:hover {
+                background: #505050;
+                opacity: 1;
+            }
+            &:active {
+            background: #1A5D1A;
+            box-shadow: 0 5px 10px #666;
+            transform: translateY(4px);
+            }
+            img {
+                margin-top: 10%;
+                width: 80%;
+            }
+        }
+    }
+
+}

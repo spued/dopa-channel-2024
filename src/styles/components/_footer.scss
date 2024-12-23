@@ -1,0 +1,12 @@
+#footer__area {
+    background: $blue;
+    .footer__content{
+        color: $font-color-white;
+        width: 100%;
+        font-family: $font-default;
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+    }
+}
